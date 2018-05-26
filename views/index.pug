@@ -1,0 +1,202 @@
+doctype html
+html(lang='en')
+  head
+    // meta
+    meta(charset='utf-8')
+    meta(content='width=device-width, initial-scale=1.0', name='viewport')
+    title Portafolio Samuel Tazzo
+    meta(content='', name='keywords')
+    meta(content='', name='description')
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i', rel='stylesheet')
+    // Bootstrap CSS File
+    link(href='lib/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Libraries CSS Files
+    link(href='lib/ionicons/css/ionicons.min.css', rel='stylesheet')
+    link(href='lib/owlcarousel/assets/owl.carousel.min.css', rel='stylesheet')
+    link(href='lib/magnific-popup/magnific-popup.css', rel='stylesheet')
+    link(href='lib/hover/hover.min.css', rel='stylesheet')
+    // Main Stylesheet File
+    link(href='css/style.css', rel='stylesheet')
+    // Responsive css
+    link(href='css/responsive.css', rel='stylesheet')
+    // Favicon
+    link(rel='shortcut icon', href='images/favicon.png')
+  body
+    // start section navbar
+    nav#main-nav
+      .row
+        .container
+          .logo
+            a(href='#header')
+              img(src='images/logo.png', alt='logo')
+          .responsive
+            i.ion-navicon-round(data-icon='m')
+          ul.nav-menu.list-unstyled
+            li
+              a.smoothScroll(href='#header') Home
+            li
+              a.smoothScroll(href='#about') Acerca_de
+            li
+              a.smoothScroll(href='#portfolio') Portafolio
+            li
+              a.smoothScroll(href='#services') Servicios
+            li
+              a.smoothScroll(href='#contact') Contacto
+    // End section navbar
+    // start section header
+    #header.home
+      .container
+        .header-content
+          h1
+            | I'm 
+            span.typed
+          p Developer, Freelancer.
+          ul.list-unstyled.list-social
+            li
+              a(href='https://www.facebook.com/Alejandrotazzo')
+                i.ion-social-facebook
+            li
+              a(href='https://www.instagram.com/samueltazzo/')
+                i.ion-social-instagram
+            li
+              a(href='https://plus.google.com/u/0/107803431324837459444')
+                i.ion-social-googleplus
+    // End section header
+    // start section about us
+    #about.paddsection
+      .container
+        .row.justify-content-between
+          .col-lg-4
+            .div-img-bg
+              .about-img
+                img.img-responsive(src='images/me.jpg', alt='me')
+          .col-lg-7
+            .about-descr
+              p.p-heading
+                | Hola, soy Samuel Tazzo, Ingeniero de Sistemas de profesión. Actualmente soy desarrollador Full Stack JavaScript, trabajando con lenguajes como Mongodb, Node.js, Express y Angular (MEAN), manejando también bases de datos SQL como Mysql o Postgres. Además también trabajo con lenguajes como Java, Unity3D, Blender, Photoshop, entre otros. Con más de 2 años de experiencia en el campo laboral, el cual presto mis servicios como freelance.
+              p.separator
+                | Puedo plantearte ideas innovadoras y emprendedoras, el cual son beneficiosas para tu negocio o empresa. De igual forma se aprovechan los recursos tecnológicos que están a la vanguardia del mercado.
+    // end section about us
+    // start section services
+    #services
+      .container
+          .section-title.text-center
+            h2 Mis Servicios
+      .container
+        .services-carousel.owl-theme
+          .services-block
+            i.ion-social-nodejs
+            span BACK-END
+            p.separator Desarrollo backend con Node.js, la herramienta que emplea JavaScript en el lado del servidor
+          .services-block
+            i.ion-ios-color-wand-outline
+            span FRONT-END
+            p.separator Me encargo de traducir el diseño de las páginas en código para construir la interfaz de los sitios o aplicaciones Web.
+          .services-block
+            i.ion-social-javascript-outline
+            span FULL STACK JAVASCRIPT
+            p.separator Construyo aplicaciones web, Single-Page Application (SPA), Aplicaciones Web Progresivas.
+          .services-block
+            i.ion-android-desktop
+            span JAVA
+            p.separator Desarrollo aplicaciones de escritorio, con base de datos, imprimir reportes, entre otros.
+          .services-block
+            i.ion-social-android-outline
+            span VIDEOJUEGOS
+            p.separator Desarrollo de videojuegos 2D y 3D
+          .services-block
+            i.ion-paintbrush
+            span DISEÑOS
+            p.separator Diseño de logos, edición de imágenes, creación de diseños 3D en Blender, entre otros
+          .services-block
+            i.ion-ios-cog-outline
+            span SERVICIOS OTROS
+            p.separator Cableado Estructurado- Instalación de Servidores - Reparación a nivel de Software o Hardware de Computadores
+          
+    // end section services
+    // start section portfolio
+    #portfolio.text-center.paddsection
+      .container
+        .section-title.text-center
+          h2 Mi Portafolio
+      .container
+        .row
+          .col-md-12
+            .portfolio-list
+              ul#portfolio-flters.nav.list-unstyled
+                li.filter.filter-active(data-filter='.all') all
+                //li.filter(data-filter='.branding') branding
+                //li.filter(data-filter='.mockups') mockups
+                //li.filter(data-filter='.uikits') ui kits
+                //li.filter(data-filter='.webdesign') web design
+                //li.filter(data-filter='.photography') photography
+            .portfolio-container
+              .col-lg-4.col-md-6.portfolio-thumbnail.all.branding.uikits.webdesign
+                a.popup-img(href='images/portfolio/1.jpg')
+                  img(src='images/portfolio/1.jpg', alt='img')
+              .col-lg-4.col-md-6.portfolio-thumbnail.all.mockups.uikits.photography
+                a.popup-img(href='images/portfolio/2.jpg')
+                  img(src='images/portfolio/2.jpg', alt='img')
+              .col-lg-4.col-md-6.portfolio-thumbnail.all.branding.webdesig.photographyn
+                a.popup-img(href='images/portfolio/3.jpg')
+                  img(src='images/portfolio/3.jpg', alt='img')
+              .col-lg-4.col-md-6.portfolio-thumbnail.all.mockups.webdesign.photography
+                a.popup-img(href='images/portfolio/4.jpg')
+                  img(src='images/portfolio/4.jpg', alt='img')
+              .col-lg-4.col-md-6.portfolio-thumbnail.all.branding.uikits.photography
+                a.popup-img(href='images/portfolio/5.jpg')
+                  img(src='images/portfolio/5.jpg', alt='img')
+              .col-lg-4.col-md-6.portfolio-thumbnail.all.mockups.uikits.webdesign
+                a.popup-img(href='images/portfolio/6.jpg')
+                  img(src='images/portfolio/6.jpg', alt='img')
+    // End section portfolio
+    // start sectoion contact
+    #contact.paddsectionContact
+      .container
+        .contact-block1
+          .row
+            .col-lg-6
+              .contact-contact
+                h2.mb-30 CONTACTO
+                ul.contact-details
+                  li
+                    span Lima, Perú
+                  li
+                    span +51 916445842
+                  li
+                    span samueltazzodev@gmail.com
+    // End section contact
+    // start section footer
+    #footer.text-center
+      .container
+        .socials-media.text-center
+          ul.list-unstyled
+            li
+              a(href='https://www.facebook.com/Alejandrotazzo')
+                i.ion-social-facebook
+            li
+              a(href='https://www.instagram.com/samueltazzo/')
+                i.ion-social-instagram
+            li
+              a(href='https://plus.google.com/u/0/107803431324837459444')
+                i.ion-social-googleplus
+           
+           
+        p © Samuel Tazzo - 2018.
+        .credits
+          | Portafolio Personal Samuel Tazzo
+    // End section footer
+    // JavaScript Libraries
+    script(src='lib/jquery/jquery.min.js')
+    script(src='lib/jquery/jquery-migrate.min.js')
+    script(src='lib/bootstrap/js/bootstrap.bundle.min.js')
+    script(src='lib/typed/typed.js')
+    script(src='lib/owlcarousel/owl.carousel.min.js')
+    script(src='lib/magnific-popup/magnific-popup.min.js')
+    script(src='lib/isotope/isotope.pkgd.min.js')
+    // Contact Form JavaScript File
+    script(src='contactform/contactform.js')
+    // Template Main Javascript File
+    script(src='js/main.js')
+    
